@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="stackPane" prefHeight="537.0" prefWidth="395.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+   <AnchorPane prefHeight="642.0" prefWidth="332.0">
+      <TextField fx:id="videoUrl" layoutX="48.0" layoutY="38.0" prefHeight="25.0" prefWidth="303.0" />
+      <Button fx:id="downloadButton" layoutX="164.0" layoutY="104.0" mnemonicParsing="false" onMouseClicked="#downloadMedia" text="Download" />
+      <Label fx:id="urlLabel" layoutX="132.0" layoutY="14.0" text="Put your video url in here" />
+      <ChoiceBox fx:id="mediaType" layoutX="133.0" layoutY="71.0" prefHeight="25.0" prefWidth="134.0" />
+      <ListView fx:id="mediaView" editable="true" layoutX="30.0" layoutY="136.0" prefHeight="354.0" prefWidth="338.0">
+         <opaqueInsets>
+            <Insets left="5.0" right="5.0" />
+         </opaqueInsets></ListView>
+   </AnchorPane>
+</StackPane>
