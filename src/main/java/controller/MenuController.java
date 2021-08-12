@@ -143,7 +143,7 @@ public class MenuController {
                 "Successful downloaded media " + playable.getTitle().getName() + " by " + playable.getAuthor().getName());
 
         if(mediaView.getItems().stream().anyMatch(x -> this.isAlreadyExisting(x, playable))) {
-            showInformation(Alert.AlertType.ERROR, "Error", "Following error messages has been encountered:",
+            showInformation(Alert.AlertType.ERROR, "Error", "Following error message has been encountered:",
                     "This media has already been downloaded");
             return;
         }
